@@ -1,0 +1,912 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kahafa Media Kratif - Mitra komunikasi visual, Pembuatan Desain Grafis, Pembuat &Pengembang Aplikasi Custom Sesuai Kebutuhan. Solusi digital untuk UMKM, Sekolah, dan Perusahaan, Serta Personal Branding. Server VPS setup dan management. Konsultasi gratis!">
+    <meta name="keywords" content="aplikasi custom, web development, sistem informasi, Kahafa Media Kreatif, aplikasi bisnis, software development, server vps, cloud hosting, Indramayu">
+    <meta name="author" content="kmk ID">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kmk.id">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kahafa Media KreatifID - Mitra Komunikasi Visual, Desain Grafis, Branding, &  Aplikasi Custom Sesuai Kebutuhan Anda">
+    <meta property="og:description" content="Pengembang aplikasi custom untuk UMKM, Sekolah, dan Perusahaan. Server VPS setup dan solusi digital yang tepat sasaran.">
+    <meta property="og:image" content="/static/og-image.jpg">
+    <meta property="og:url" content="https://kmk.id/">
+    <meta property="og:site_name" content="kmk ID">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kmk ID - Miitra Komunikasi Visual & Aplikasi Web Custom">
+    <meta name="twitter:description" content="Mitra Komunikasi Visual, Desain Grafis, Branding, Aplikasi Web">
+    <meta name="twitter:image" content="/static/og-image.jpg">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#3B82F6">
+    <meta name="msapplication-TileColor" content="#3B82F6">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="kmk ID RSS Feed" href="/rss.xml">
+    
+    <title>Kahafa Media Kreatif | Mitra Komunikasi Visual, Desain Grafis, Pengembangan Web & Server VPS Setup</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Gradient animations */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+     <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-code text-blue-500 text-2xl mr-3"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        Kahafa Media Kreatif .ID
+                    </span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-blue-500 transition">Layanan</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-blue-500 transition">Portfolio</a>
+                    <a href="#how-it-works" class="text-gray-300 hover:text-blue-500 transition">Proses</a>
+                    <a href="#demo" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition">
+                        Konsultasi Gratis
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#features" class="block text-gray-300 hover:text-blue-500">Layanan</a>
+                <a href="#portfolio" class="block text-gray-300 hover:text-blue-500">Portfolio</a>
+                <a href="#how-it-works" class="block text-gray-300 hover:text-blue-500">Proses</a>
+                <a href="#demo" class="block bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg text-center">
+                    Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-block">
+                        <span class="bg-blue-500/10 text-blue-400 px-4 py-2 rounded-full text-sm font-semibold">
+                            <i class="fas fa-star mr-2"></i>Mitra Desain Grafis & Aplikasi Web
+                        </span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Bangun Branding: Personal & Bisnis Anda
+                        <span class="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        Sekarang !
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl text-gray-400">
+                        Kami mitra <span class="text-blue-500 font-bold"> Pembuatan desain grafis & pengembang aplikasi web </span>. <br>
+                        <i class="fas fa-code text-blue-500 text-2xl mr-3"></i>Membangun Branding.<br>
+                        <i class="fas fa-code text-blue-500 text-2xl mr-3"></i>Manajemen Sistem informasi Digital.<br> Untuk Personal, Lembaga, UMKM, Yayasan, Sekolah, dll. 
+                        Konsultasi <span class="text-green-500 font-bold">gratis!</span>
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#demo" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold text-center transition">
+                            <i class="fas fa-rocket mr-2"></i>Request Demo Gratis
+                        </a>
+                        <a href="https://wa.me/6281222000566" target="_blank" class="border border-gray-700 hover:border-blue-500 px-8 py-4 rounded-lg font-semibold text-center transition">
+                            <i class="fab fa-whatsapp mr-2"></i>Chat WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-800">
+                        <div>
+                            <div class="text-3xl font-bold text-blue-500">25+</div>
+                            <div class="text-sm text-gray-400">Project Selesai</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-purple-500">5+</div>
+                            <div class="text-sm text-gray-400">Tahun Pengalaman</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-green-500">99,9%</div>
+                            <div class="text-sm text-gray-400">Klien Puas</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
+                    <div class="relative bg-gray-800 rounded-3xl p-8 border border-gray-700">
+                        <p class="text-blue-500 font-awesome">
+                        Kami hadir untuk memberikan solusi kebutuhan anda:
+                        </p>
+                    <br>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4 bg-gray-900 p-4 rounded-xl">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-paint-brush text-green-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Desain Grafis</div>
+                                    <div class="text-sm text-gray-400">Keren, modern, & berkarakter</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 bg-gray-900 p-4 rounded-xl">
+                                <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-laptop-code text-blue-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Aplikasi Web</div>
+                                    <div class="text-sm text-gray-400">Responsive & modern</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4 bg-gray-900 p-4 rounded-xl">
+                                <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-server text-purple-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Server & VPS Setup</div>
+                                    <div class="text-sm text-gray-400">Cloud hosting & management</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4 bg-gray-900 p-4 rounded-xl">
+                                <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-cogs text-green-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Sistem Custom</div>
+                                    <div class="text-sm text-gray-400">Sesuai kebutuhan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Layanan <span class="text-blue-500">KMK ID</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Kami menyediakan solusi aplikasi custom yang tepat untuk kebutuhan bisnis Anda
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition group">
+                    <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition">
+                        <i class="fas fa-laptop-code text-blue-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Aplikasi Web</h3>
+                    <p class="text-gray-400">
+                        Sistem informasi, e-commerce, dashboard admin, dan website company profile yang responsive dan modern
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-purple-500 transition group">
+                    <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition">
+                        <i class="fas fa-server text-purple-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Server & VPS Management</h3>
+                    <p class="text-gray-400">
+                        Setup dan konfigurasi server, VPS, cloud hosting dengan optimasi performa dan keamanan terbaik
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition group">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition">
+                        <i class="fas fa-chart-line text-green-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Sistem Monitoring</h3>
+                    <p class="text-gray-400">
+                        Dashboard monitoring jaringan, server, stok barang, dan berbagai parameter bisnis real-time
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-yellow-500 transition group">
+                    <div class="w-16 h-16 bg-yellow-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-500/30 transition">
+                        <i class="fab fa-whatsapp text-yellow-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">WhatsApp Integration</h3>
+                    <p class="text-gray-400">
+                        Bot WhatsApp untuk broadcast, customer service, notifikasi otomatis, dan automasi bisnis
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-red-500 transition group">
+                    <div class="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-500/30 transition">
+                        <i class="fas fa-database text-red-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Manajemen Data</h3>
+                    <p class="text-gray-400">
+                        Sistem manajemen database, backup otomatis, dan integrasi dengan berbagai platform
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-cyan-500 transition group">
+                    <div class="w-16 h-16 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-cyan-500/30 transition">
+                        <i class="fas fa-headset text-cyan-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Support & Maintenance</h3>
+                    <p class="text-gray-400">
+                        Tim support profesional siap membantu Anda 24/7 untuk maintenance dan troubleshooting
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Portfolio <span class="text-blue-500">Kami</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Beberapa project yang telah kami kerjakan untuk berbagai klien
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition group">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center group-hover:bg-green-500/30 transition">
+                                <i class="fab fa-whatsapp text-green-500 text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-2">Broadcast WhatsApp</h3>
+                                <p class="text-green-500 font-semibold">Yayasan Rahmat Kota Kediri</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-400 mb-4">Sistem broadcast WhatsApp otomatis untuk mengirim informasi kegiatan yayasan, pengumuman, dan komunikasi dengan donatur secara efisien.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">WhatsApp API</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Python</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            
+                            <a href="/portfolio/broadcast-whatsapp" 
+                               class="flex-1 border border-green-500 text-green-500 hover:bg-green-500 hover:text-white py-3 px-4 rounded-lg transition text-center font-semibold">
+                                <i class="fas fa-info-circle mr-2"></i>Detail
+                            </a>
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition group">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center group-hover:bg-purple-500/30 transition">
+                                <i class="fas fa-network-wired text-purple-500 text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-2">OLT Monitoring System</h3>
+                                <p class="text-purple-500 font-semibold">ISP Wuznet</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-400 mb-4">Dashboard monitoring real-time untuk Optical Line Terminal (OLT), tracking status jaringan, bandwidth usage, dan maintenance scheduling untuk ISP.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">React.js</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">SNMP</span>
+                            
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            
+                            <a href="/portfolio/otomatisasi-email-massal-python-google-apps-script-gmail" target="_blank" 
+                               class="flex-1 bg-purple-500 hover:bg-purple-500/80 text-white py-3 px-4 rounded-lg transition text-center font-semibold">
+                                <i class="fas fa-external-link-alt mr-2"></i>Lihat Project
+                            </a>
+                            
+                            <a href="/portfolio/olt-monitoring-system" 
+                               class="flex-1 border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white py-3 px-4 rounded-lg transition text-center font-semibold">
+                                <i class="fas fa-info-circle mr-2"></i>Detail
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-500 transition group">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-yellow-500/20 rounded-2xl flex items-center justify-center group-hover:bg-yellow-500/30 transition">
+                                <i class="fas fa-shopping-cart text-yellow-500 text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-2">Sistem Stok &amp; Penjualan</h3>
+                                <p class="text-yellow-500 font-semibold">Zonahelm</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-400 mb-4">Aplikasi manajemen stok dan penjualan helm dengan fitur barcode scanner, laporan real-time, dan integrasi dengan e-commerce untuk toko helm.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Laravel</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">MySQL</span>
+                            
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            
+                            <a href="/portfolio/sistem-stok-penjualan" 
+                               class="flex-1 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white py-3 px-4 rounded-lg transition text-center font-semibold">
+                                <i class="fas fa-info-circle mr-2"></i>Detail
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-cyan-500 transition group">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-cyan-500/20 rounded-2xl flex items-center justify-center group-hover:bg-cyan-500/30 transition">
+                                <i class="fas fa-server text-cyan-500 text-3xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold mb-2">Monitoring Jaringan &amp; Server</h3>
+                                <p class="text-cyan-500 font-semibold">Enterprise Client</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-400 mb-4">Dashboard monitoring komprehensif untuk infrastruktur IT perusahaan, termasuk server uptime, network traffic, disk usage, dan alert system.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Python</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">Grafana</span>
+                            
+                            <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm">InfluxDB</span>
+                            
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            
+                            <a href="/portfolio/monitoring-jaringan-server" 
+                               class="flex-1 border border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white py-3 px-4 rounded-lg transition text-center font-semibold">
+                                <i class="fas fa-info-circle mr-2"></i>Detail
+                            </a>
+                        </div>
+                    </div>
+                    
+                
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-400 mb-4">
+                    <i class="fas fa-trophy text-yellow-500 mr-2"></i>
+                    <span class="text-yellow-500 font-semibold">50+ project berhasil diselesaikan</span> untuk berbagai industri
+                </p>
+                <a href="#demo" class="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-semibold transition">
+                    Konsultasi Project Anda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Proses <span class="text-blue-500">Pengembangan</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Langkah mudah untuk mewujudkan aplikasi impian Anda
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-comments text-blue-500 text-3xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-blue-500 mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-2">Konsultasi & Analisis</h3>
+                    <p class="text-gray-400">Diskusi kebutuhan dan analisis requirement untuk solusi terbaik</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-code text-purple-500 text-3xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-purple-500 mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-2">Development & Testing</h3>
+                    <p class="text-gray-400">Proses development dengan update progress secara berkala</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-green-500 text-3xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-green-500 mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-2">Deploy & Maintenance</h3>
+                    <p class="text-gray-400">Go-live aplikasi dengan support dan maintenance berkelanjutan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- CTA / Demo Request Form -->
+    <section id="demo" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-purple-600">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-white">
+                    Konsultasi Gratis
+                </h2>
+                <p class="text-xl text-blue-100">
+                    Ceritakan kebutuhan Anda dan dapatkan solusi terbaik dari tim kami
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 md:p-12">
+                <form id="demo-form" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">
+                            <i class="fas fa-user text-blue-500 mr-2"></i>Nama Lengkap *
+                        </label>
+                        <input type="text" name="name" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-gray-900"
+                               placeholder="Masukkan nama lengkap Anda">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">
+                            <i class="fab fa-whatsapp text-blue-500 mr-2"></i>Nomor WhatsApp *
+                        </label>
+                        <input type="tel" name="phone" required
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-gray-900"
+                               placeholder="0812-3456-7890">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">
+                            <i class="fas fa-lightbulb text-blue-500 mr-2"></i>Kebutuhan Anda *
+                        </label>
+                        <textarea name="requirements" rows="5" required
+                                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-gray-900"
+                                  placeholder="Ceritakan aplikasi atau sistem yang Anda butuhkan. Contoh: Sistem manajemen stok untuk toko saya, aplikasi absensi karyawan, website company profile, dll."></textarea>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <input type="checkbox" id="terms" required
+                               class="mt-1 mr-3 w-5 h-5 text-blue-600 rounded border-gray-300">
+                        <label for="terms" class="text-sm text-gray-600">
+                            Saya setuju untuk dihubungi oleh tim KMK.ID dan memahami bahwa konsultasi ini gratis tanpa komitmen
+                        </label>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-lg transition transform hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i>Hubungi via WhatsApp
+                    </button>
+                </form>
+                
+                <div id="form-message" class="mt-6 hidden"></div>
+                
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center">
+                    <p class="text-sm text-gray-600 mb-3">
+                        <i class="fas fa-clock text-blue-500 mr-1"></i>
+                        Tim kami akan merespon dalam <span class="font-semibold text-blue-600">1 jam kerja</span>
+                    </p>
+                    <p class="text-xs text-gray-500">
+                        Jam kerja: Senin - Sabtu, 08:00 - 17:00 WIB
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Pertanyaan <span class="text-blue-500">Umum</span>
+                </h2>
+            </div>            
+            
+                <details class="bg-gray-900 rounded-lg border border-gray-700 p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                        Berapa lama proses pengembangan aplikasi?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-4">
+                        Waktu pengembangan bervariasi tergantung kompleksitas. Aplikasi sederhana 2-4 minggu, 
+                        aplikasi kompleks 2-4 bulan.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-900 rounded-lg border border-gray-700 p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                        Apakah bisa request custom sesuai kebutuhan spesifik?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-4">
+                        Ya, kami spesialisasi dalam aplikasi custom. Semua fitur disesuaikan dengan 
+                        kebutuhan bisnis Anda.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-900 rounded-lg border border-gray-700 p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                        Bagaimana dengan support setelah aplikasi selesai?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-4">
+                        Kami memberikan garansi bug fixing 3 bulan dan support maintenance 
+                        dengan biaya terjangkau.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-900 rounded-lg border border-gray-700 p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">
+                        Apakah bisa lihat progress pengembangan?
+                        <i class="fas fa-chevron-down group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-gray-400 mt-4">
+                        Ya, kami memberikan update progress secara berkala dan demo aplikasi 
+                        di setiap milestone pengembangan.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-blue-500 text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">KMK .ID</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Pengembang aplikasi custom untuk UMKM, Sekolah, dan Perusahaan. 
+                        Solusi digital yang tepat sasaran dan terjangkau.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#features" class="hover:text-blue-500">Aplikasi Web</a></li>
+                        <li><a href="#features" class="hover:text-blue-500">Server & VPS</a></li>
+                        <li><a href="#portfolio" class="hover:text-blue-500">Portfolio</a></li>
+                        <li><a href="#demo" class="hover:text-blue-500">Konsultasi</a></li>
+                    </ul>
+                </div>                
+                
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-phone text-blue-500 mr-2"></i>081-222-000-566</li>
+                        <li><i class="fas fa-envelope text-blue-500 mr-2"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="284347465c4943684b44495b5b5106414c">[email&#160;protected]</a></li>
+                        <li><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>Indramayu, Jawa Barat, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Kahafa Media Kreatif ID. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        document.getElementById('demo-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const messageDiv = document.getElementById('form-message');
+            
+            // Disable button
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Mengirim...';
+            
+            try {
+                const response = await fetch('/request-demo', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                messageDiv.classList.remove('hidden');
+                
+                if (result.success) {
+                    messageDiv.className = 'mt-6 p-4 bg-green-500/20 border border-green-500 rounded-lg text-green-400';
+                    messageDiv.innerHTML = '<i class="fas fa-check-circle mr-2"></i>' + result.message;
+                    this.reset();
+                    
+                    // Redirect to WhatsApp after 2 seconds
+                    setTimeout(() => {
+                        const phone = '6281222000566';
+                        const message = `Halo KMK ID, saya ${this.name.value} ingin konsultasi tentang: ${this.requirements.value}`;
+                        const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+                        window.open(whatsappUrl, '_blank');
+                    }, 2000);
+                } else {
+                    messageDiv.className = 'mt-6 p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-400';
+                    messageDiv.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i>' + result.message;
+                }
+            } catch (error) {
+                messageDiv.classList.remove('hidden');
+                messageDiv.className = 'mt-6 p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-400';
+                messageDiv.innerHTML = '<i class="fas fa-exclamation-circle mr-2"></i>Terjadi kesalahan. Silakan coba lagi.';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fab fa-whatsapp mr-2"></i>Hubungi via WhatsApp';
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+    
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KMK ID",
+        "description": "Pengembang Aplikasi Custom Sesuai Kebutuhan Anda",
+        "url": "https://KMK.id",
+        "logo": "https://KMK.id/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/KMKid",
+            "https://www.instagram.com/KMKid"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-812-4131-4446",
+            "contactType": "customer service",
+            "availableLanguage": ["Indonesian", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kediri",
+            "addressRegion": "Jawa Timur",
+            "addressCountry": "Indonesia"
+        },
+        "founder": {
+            "@type": "Organization",
+            "name": "KMK ID Team"
+        },
+        "foundingDate": "2020",
+        "numberOfEmployees": "5-10",
+        "knowsAbout": [
+            "Web Development",
+            "Mobile App Development", 
+            "Server Management",
+            "VPS Setup",
+            "Cloud Hosting",
+            "Custom Software Development"
+        ],
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Indonesia"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KMK ID",
+        "url": "https://KMK.id",
+        "description": "Pengembang aplikasi custom untuk UMKM, Sekolah, dan Perusahaan",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://KMK.id/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "KMK ID"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Custom Application Development",
+        "provider": {
+            "@type": "Organization",
+            "name": "KMK ID"
+        },
+        "description": "Layanan pengembangan aplikasi custom untuk web, mobile, dan server management",
+        "serviceType": "Software Development",
+        "areaServed": "Indonesia",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Web Application Development"
+                    }
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Server & VPS Management"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Custom System Development"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"8b6050c7a669442c917e42e4e46373eb","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
